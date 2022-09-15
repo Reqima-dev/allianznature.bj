@@ -3154,7 +3154,7 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
   .form_quizz {
-    height: 186vh;
+    height: 154vh;
   }
   .form_quizz form .profil_info {
     padding: 1rem;
@@ -3616,13 +3616,14 @@ footer {
   }
 
   .besoins-conseils img {
-    width: 62%;
+    width: 113%;
   }
 
   .besoins-conseils-home-container h2 {
     font-size: 2rem;
     padding-top: 53px;
     margin: 0;
+    padding-bottom: 2rem;
   }
   .compoition_savons img {
     width: 673px;
@@ -3638,11 +3639,13 @@ footer {
   }
 
   .services_femmes {
-    width: 1134px;
-    height: 581px;
-    background-position: none;
+    width: 890px;
     position: absolute;
     z-index: -55555555;
+    height: 500px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
   }
 
   .besoins-conseils-home-container {
@@ -3844,10 +3847,9 @@ footer {
   }
 
   .services_femmes {
-    width: 717px;
-    height: 466px;
-    overflow: hidden;
+    width: 686px;
   }
+
   .apropos-titre {
     display: block;
     margin-top: 25px;
@@ -3886,7 +3888,7 @@ footer {
     margin-bottom: 50px;
   }
   .form_quizz {
-    height: 302vh;
+    height: 255vh;
   }
   .form_quizz form .profil_info input {
     width: 355px;
@@ -4133,7 +4135,10 @@ footer {
   .hero a {
     font-size: 12px;
   }
-
+  .services_femmes {
+    height: 365px;
+    width: 549px;
+  }
   .logo {
     width: 184px;
   }
@@ -4535,7 +4540,7 @@ footer {
     width: 358px;
     height: 198px;
   }
-  
+
   .produitVentes {
     top: 4rem;
   }
@@ -4574,7 +4579,12 @@ footer {
     width: 284px;
   }
   .form_quizz {
-    height: 320vh;
+    height: 265vh;
+  }
+  .services_femmes {
+    height: 372px;
+    width: 385px;
+    overflow: hidden;
   }
   .form_quizz form .profil_quizz .from__group {
     width: 280px;
