@@ -4409,15 +4409,18 @@ footer {
     height: 227px;
   }
   .produitVentes {
-    top: 7rem;
+    top: 4rem;
   }
   .suivant,
   .precedent {
-    top: 28vh;
+    top: 20vh;
     font-size: 2rem;
   }
   .info-exper {
-    margin-top: -68px;
+    margin-top: -135px;
+  }
+  .besoins-conseils img {
+    width: 94vw;
   }
   .part_naires h2 {
     font-size: 1.2rem;
