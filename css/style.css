@@ -3821,7 +3821,13 @@ footer {
     font-size: 3.5em;
     padding: 0;
   }
-
+  .besoins-conseils-home-container {
+    left: -5px;
+  }
+  .services_media_screen p {
+    font-size: 15px;
+    padding-left: 0;
+  }
   .produits-align {
     display: inline-flex;
     margin-bottom: 18px;
@@ -3839,9 +3845,9 @@ footer {
 
   .services_femmes {
     width: 717px;
-    height: 480px;
+    height: 466px;
+    overflow: hidden;
   }
-
   .apropos-titre {
     display: block;
     margin-top: 25px;
@@ -4526,9 +4532,10 @@ footer {
     font-size: 1rem;
   }
   .besoins-conseils-home-container {
-    width: 395px;
-    height: 227px;
+    width: 358px;
+    height: 198px;
   }
+  
   .produitVentes {
     top: 4rem;
   }
@@ -4576,7 +4583,7 @@ footer {
   .form_quizz form .message_group textarea {
     width: 289px;
   }
-  .form_quizz form .message_group label{
+  .form_quizz form .message_group label {
     font-size: 13px;
     padding-left: 13px;
   }
