@@ -2894,7 +2894,9 @@ footer {
   .menu-item {
     position: relative;
   }
-
+  .content_product .produtArtisanaux {
+    padding: 0;
+  }
   .menu .menu-item .sub-menu {
     opacity: 1;
     position: relative;
@@ -3122,7 +3124,9 @@ footer {
   .heures {
     gap: 2rem;
   }
-
+  .produit-page .produit_header .text_header {
+    left: 22rem;
+  }
   .row-right h4 {
     font-size: 2.4em;
   }
@@ -3280,6 +3284,13 @@ footer {
     margin-left: 0;
     margin-right: 26px;
     border-radius: 0;
+  }
+
+  .produit-page .produit_header .text_header {
+    left: 17rem;
+  }
+  .nos_produits {
+    margin: 2rem 3rem;
   }
 
   #suivi-personels-home {
@@ -3719,6 +3730,12 @@ footer {
     margin: auto 54px;
     margin-top: 162px;
   }
+  .produit-page .produit_header .text_header {
+    left: 10rem;
+  }
+  .content_product .produtArtisanaux{
+    gap: 4rem;
+  }
 
   .produits-home {
     margin-left: -1px;
@@ -4006,6 +4023,10 @@ footer {
 
   .icon-resaux a {
     padding: 0;
+  }
+  .produit-page .produit_header .text_header{
+    flex-direction: column;
+    left: 12rem;
   }
 
   .hero a {
@@ -4378,7 +4399,12 @@ footer {
   .produits-info {
     top: 10em;
   }
-
+  .produit-page .produit_header .text_header{
+    left: 6rem;
+  }
+  .content_product .produtArtisanaux{
+    gap: 1rem;
+  }
   .produits-name-page ul {
     display: flex;
     flex-direction: column;
