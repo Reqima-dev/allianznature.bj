@@ -353,77 +353,18 @@ header {
 .precedent {
   left: 2rem;
 }
-
+.produitVentes .bannierpay {
+  display: none;
+}
 .produitVentes {
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 27vw;
-  margin-right: 1rem;
+  width: 25vw;
+  height: 46vh;
   top: 4rem;
 }
-.produitVentes h2 {
-  padding-left: 1.5rem;
-  position: relative;
-  display: inline-block;
-}
-.produitVentes h2::before {
-  position: absolute;
-  content: "";
-  width: 100px;
-  height: 3px;
-  background: var(--color-vert);
-  bottom: -4px;
-}
-.produitVentes h2 span {
-  color: var(--color-jaune-aliance);
-}
-.produitVentes .phare_produits {
-  gap: 1rem;
-  display: flex;
-  overflow-y: hidden;
-  /*  scrollbar-width: none;*/
-  width: 317px;
-  height: 50vh;
-  padding-top: 1rem;
-}
 
-.produitVentes .phare_produits .produits_image {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  display: block;
-  text-align: center;
-}
-.produitVentes .phare_produits .produits_image img {
-  max-width: 170px;
-  max-height: 170px;
-  position: relative;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-.produitVentes .phare_produits .produits_image p {
-  text-align: center;
-  font-size: 13px;
-  font-weight: 500;
-}
-
-.produitVentes .phare_produits .produits_image a {
-  color: white;
-  text-decoration: none;
-  background: var(--color-vert);
-  padding: 7px;
-  font-size: 10px;
-  border-radius: 7px;
-  transition: all 400ms ease;
-  border: 1px solid var(--color-vert);
-}
-.produitVentes .phare_produits .produits_image a:hover {
-  color: var(--color-vert);
-  background: none;
-  font-size: 12px;
-}
 .info-exper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -741,7 +682,6 @@ header {
 }
 .condi_formulaire .condition {
   width: 250vw;
-  border-top: 1px solid #444;
   border-bottom: 1px solid #444;
 }
 .condi_formulaire .condition h3 {
@@ -790,7 +730,7 @@ header {
 }
 
 .témoin-titre h2 {
-  font-family: var(--font-family-2);
+  font-family: var(--font-glacialRegular);
   font-size: 2.5em;
   font-weight: bold;
   color: var(--color-jaune-aliance);
@@ -3037,9 +2977,12 @@ footer {
     margin: 0;
   }
 
-  .besoins-conseils-home-container {
-    top: 200px;
-    text-align: center;
+  .magazine_home {
+    padding-left: 0;
+  }
+
+  .distri_buteurs {
+    padding-left: 80px;
   }
 
   .besoins-conseils-home-container .media-small {
@@ -3193,14 +3136,36 @@ footer {
     margin-left: 54px;
   }
 
-  .slider {
-    height: 30vh;
+  .plus-info .about_image {
+    width: 237rem;
+    height: 33rem;
+  }
+  .magazine_home {
+    padding-right: 0;
   }
 
-  .slider img {
-    height: 100%;
+  .magazine_home .magazineImage img:nth-child(1) {
+    width: 248px;
+    height: 232px;
+  }
+  .magazine_home .magazineImage img:nth-child(2) {
+    width: 148px;
+    height: 151px;
+    left: 16rem;
+    top: 28px;
+  }
+  .magazine_home .magazineImage img:nth-child(3) {
+    width: 153px;
+    height: 123px;
+    position: absolute;
+    left: 16rem;
+    bottom: 40px;
   }
 
+  .distri_buteurs {
+    display: block;
+    gap: 0;
+  }
   /*------------- ABOUT -------------------*/
 
   .about-paragraph {
@@ -3346,7 +3311,31 @@ footer {
   .row-right h4 {
     font-size: 1.9em;
   }
+  .containerSLider {
+    flex-direction: column;
+  }
+  .slider img {
+    width: 103vw;
+  }
+  .suivant,
+  .precedent {
+    top: 43vh;
+  }
+  .info-exper {
+    margin-top: 250px;
+  }
 
+  .produitVentes {
+    top: 25rem;
+    width: 100%;
+    height: 100%;
+  }
+  .produitVentes img {
+    display: none;
+  }
+  .produitVentes .bannierpay {
+    display: block;
+  }
   .info-head {
     font-size: 16px;
   }
@@ -3383,6 +3372,57 @@ footer {
     height: 250px;
   }
 
+  .about_image {
+    display: none;
+  }
+  .plus-info {
+    padding: 0;
+  }
+  .plus-info-text {
+    background-image: url(../image/filter_histoire.jpg);
+    background-size: cover;
+    color: #fff;
+  }
+  .plus-info-text h4 {
+    color: #fff;
+  }
+  .plus-info-text p {
+    font-weight: 700;
+  }
+
+  .magazine_home {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    height: 100vh;
+  }
+  .magazine_home .magazineImage img:nth-child(2) {
+    width: 274px;
+    height: 127px;
+    top: -3px;
+  }
+  .magazine_home .magazineImage img:nth-child(3) {
+    width: 277px;
+    height: 92px;
+    position: absolute;
+    left: 16rem;
+    bottom: 0;
+  }
+  .magazine_home .magazineImage {
+    padding-right: 290px;
+  }
+
+  .gammeProduits .phare_produits {
+    flex-wrap: wrap;
+    margin: 2rem;
+    width: auto;
+  }
+  .gammeProduits .phare_produits .produits_image {
+    height: 322px;
+  }
+  .produits-home {
+    margin-top: 0;
+  }
   /*-------------PRODUITS--------------*/
   .produits-info h2 {
     font-size: 6.5em;
@@ -3484,7 +3524,8 @@ footer {
   }
 
   .besoins-conseils {
-    display: inline-block;
+    display: flex;
+    gap: 1rem;
   }
 
   .apropos-right img {
@@ -3519,7 +3560,13 @@ footer {
   }
 
   .besoins-conseils img {
-    width: 100%;
+    width: 62%;
+  }
+
+  .besoins-conseils-home-container h2 {
+    font-size: 3rem;
+    padding-top: 66px;
+    margin: 0;
   }
 
   .info-apropos p {
@@ -3670,10 +3717,12 @@ footer {
   .info-exper {
     display: inline-block;
     margin: auto 54px;
+    margin-top: 162px;
   }
 
   .produits-home {
     margin-left: -1px;
+    padding: 0 3rem;
   }
 
   .produits-home h2 {
@@ -3708,6 +3757,10 @@ footer {
     margin: 0;
   }
 
+  .produitVentes {
+    top: 20rem;
+  }
+
   .apropos-right img {
     display: none;
   }
@@ -3736,16 +3789,19 @@ footer {
   }
 
   .besoins-conseils img {
-    width: 40vw;
+    width: 60vw;
   }
 
   .plus-info-text h4 {
     font-size: 2em;
-    color: var(--color-jaune-aliance);
+    color: #fff;
   }
 
   #suivi-personels-home {
     padding: 0 3rem;
+  }
+  .témoignages-container {
+    margin-top: -135px;
   }
 
   .ventes-point {
@@ -3971,7 +4027,48 @@ footer {
     text-align: center;
     padding: 0;
   }
+  .produitVentes {
+    top: 13rem;
+  }
+  .info-exper {
+    margin-top: 38px;
+  }
+  .produits a {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+  }
 
+  .part_naires h2 {
+    padding-left: 6rem;
+  }
+  .magazine_home {
+    height: 57vh;
+  }
+
+  .magazine_home .titres h1 {
+    font-size: 3rem;
+  }
+  .témoignages-container {
+    margin-top: -47px;
+  }
+  .distri_buteurs h2 {
+    color: var(--color-vert);
+    font-size: 2rem;
+    padding-left: 0;
+  }
+  .magazine_home .magazineImage {
+    display: none;
+  }
+  .produits-home h2 {
+    font-size: 2.5rem;
+  }
+  .besoins-conseils-home-container {
+    width: 429px;
+    height: 247px;
+  }
   .produits-img {
     height: 15rem;
   }
@@ -4298,7 +4395,54 @@ footer {
     padding: 0;
     text-align: center;
   }
-
+  .part_naires h2 {
+    padding-left: 4rem;
+  }
+  .distri_buteurs {
+    padding-left: 2rem;
+  }
+  .distri_buteurs p {
+    font-size: 1rem;
+  }
+  .besoins-conseils-home-container {
+    width: 395px;
+    height: 227px;
+  }
+  .produitVentes {
+    top: 7rem;
+  }
+  .suivant,
+  .precedent {
+    top: 28vh;
+    font-size: 2rem;
+  }
+  .info-exper {
+    margin-top: -68px;
+  }
+  .part_naires h2 {
+    font-size: 1.2rem;
+  }
+  .magazine_home .titres h1 {
+    font-size: 2.5rem;
+  }
+  .magazine_home .titres p,
+  .magazine_home .titres span {
+    font-size: 1rem;
+  }
+  .magazine_home .titres form input[type="email"] {
+    width: 330px;
+  }
+  .besoins-conseils-home-container h2 {
+    font-size: 3rem;
+  }
+  .condi_formulaire {
+    margin: 0;
+    padding: 1rem 2rem;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    /* gap: 2rem; */
+  }
   .line-savon-links h2 {
     margin-right: 0;
   }
