@@ -1732,19 +1732,20 @@ header {
 ===============
 */
 .services_femmes {
-  width: 1100px;
-  height: 520px;
-  background-image: url(../image/bannireFemme.png);
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: contain; /* Resize the background image to cover the entire container */
+  width: 1111px;
+  height: 493px;
+  background-image: url(../image/Modi_DM89824.jpg);
+  background-position: -25% 83%;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .services_media_screen {
-  top: -70px !important;
-  right: 60px !important;
+  top: -70px;
+  right: 60px;
 }
 .services_media_screen p {
   font-size: 1.3rem;
+  padding-left: 51px;
 }
 .services_media_screen p span {
   font-weight: 600;
@@ -2020,8 +2021,8 @@ header {
   border-top-right-radius: 0;
   border-bottom-right-radius: 50%;
   border-bottom-left-radius: 50%;
-  width: 570px;
-  height: 250px;
+  width: 896px;
+  height: 246px;
   box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
 }
 .besoins-conseils-home-container h2 {
@@ -2953,7 +2954,9 @@ footer {
   .produits {
     grid-template-columns: repeat(3, 1fr);
   }
-
+  .services_femmes {
+    height: 453px;
+  }
   .produits a {
     text-align: center;
   }
@@ -3134,7 +3137,34 @@ footer {
   .info-head {
     font-size: 1.2em;
   }
-
+  .services_femmes {
+    height: 397px;
+  }
+  .besoins-conseils-home-container {
+    width: 732px;
+    height: 250px;
+  }
+  .services_media_screen p {
+    font-size: 1rem;
+  }
+  .besoins-conseils-home-container h2 {
+    font-size: 3em;
+  }
+  .form_quizz form .profil_quizz {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .form_quizz {
+    height: 186vh;
+  }
+  .form_quizz form .profil_info {
+    padding: 1rem;
+  }
+  .form_quizz form {
+    width: 880px;
+  }
+  .compoition_savons img {
+    width: 824px;
+  }
   .info-exper {
     margin-right: 28px;
     margin-left: 54px;
@@ -3309,6 +3339,21 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+  }
+  .services_femmes {
+    height: 360px;
+  }
+  .besoins-conseils-home-container {
+    height: 158px;
+  }
+  .form_quizz form {
+    width: 789px;
+  }
+  .form_quizz form .profil_info input {
+    width: 204px;
+  }
+  .besoins-conseils-home-container {
+    margin-top: 50px;
   }
 
   .témoins img {
@@ -3575,9 +3620,38 @@ footer {
   }
 
   .besoins-conseils-home-container h2 {
-    font-size: 3rem;
-    padding-top: 66px;
+    font-size: 2rem;
+    padding-top: 53px;
     margin: 0;
+  }
+  .compoition_savons img {
+    width: 673px;
+  }
+  .form_quizz form {
+    width: 681px;
+  }
+  .form_quizz form .profil_info input {
+    width: 171px;
+  }
+  .form_quizz form .profil_quizz .from__group {
+    width: 295px;
+  }
+
+  .services_femmes {
+    width: 1134px;
+    height: 581px;
+    background-position: none;
+    position: absolute;
+    z-index: -55555555;
+  }
+
+  .besoins-conseils-home-container {
+    height: 255px;
+    width: 450px;
+    background: rgba(255, 255, 255, 0.473);
+    border: 1px solid #fff;
+    top: -17px;
+    left: 10px;
   }
 
   .info-apropos p {
@@ -3733,7 +3807,7 @@ footer {
   .produit-page .produit_header .text_header {
     left: 10rem;
   }
-  .content_product .produtArtisanaux{
+  .content_product .produtArtisanaux {
     gap: 4rem;
   }
 
@@ -3761,6 +3835,11 @@ footer {
 
   .produits-img {
     height: 12rem;
+  }
+
+  .services_femmes {
+    width: 717px;
+    height: 480px;
   }
 
   .apropos-titre {
@@ -3800,15 +3879,31 @@ footer {
   .besoins-conseils-home-container {
     margin-bottom: 50px;
   }
-
-  .besoins-conseils-home-container h2 {
-    font-size: 4em;
+  .form_quizz {
+    height: 302vh;
+  }
+  .form_quizz form .profil_info input {
+    width: 355px;
+  }
+  .form_quizz form .profil_quizz .from__group {
+    width: 448px;
+  }
+  .form_quizz form .message_group textarea {
+    width: 399px;
+  }
+  .compoition_savons img {
+    width: 481px;
+  }
+  .form_quizz form .profil_info {
+    flex-direction: column;
+  }
+  .form_quizz form {
+    width: 506px;
   }
 
-  .besoins-conseils img {
-    width: 60vw;
+  .form_quizz form .profil_quizz {
+    grid-template-columns: 1fr;
   }
-
   .plus-info-text h4 {
     font-size: 2em;
     color: #fff;
@@ -4024,7 +4119,7 @@ footer {
   .icon-resaux a {
     padding: 0;
   }
-  .produit-page .produit_header .text_header{
+  .produit-page .produit_header .text_header {
     flex-direction: column;
     left: 12rem;
   }
@@ -4099,7 +4194,7 @@ footer {
   }
 
   .besoins-conseils-home-container h2 {
-    font-size: 3.5em;
+    font-size: 2.5em;
   }
 
   .suivi-container p {
@@ -4399,10 +4494,10 @@ footer {
   .produits-info {
     top: 10em;
   }
-  .produit-page .produit_header .text_header{
+  .produit-page .produit_header .text_header {
     left: 6rem;
   }
-  .content_product .produtArtisanaux{
+  .content_product .produtArtisanaux {
     gap: 1rem;
   }
   .produits-name-page ul {
@@ -4462,7 +4557,31 @@ footer {
     width: 330px;
   }
   .besoins-conseils-home-container h2 {
-    font-size: 3rem;
+    font-size: 2rem;
+  }
+
+  .form_quizz form {
+    width: 338px;
+  }
+  .form_quizz form .profil_info input {
+    width: 284px;
+  }
+  .form_quizz {
+    height: 320vh;
+  }
+  .form_quizz form .profil_quizz .from__group {
+    width: 280px;
+    flex-direction: column;
+  }
+  .form_quizz form .message_group textarea {
+    width: 289px;
+  }
+  .form_quizz form .message_group label{
+    font-size: 13px;
+    padding-left: 13px;
+  }
+  .compoition_savons img {
+    width: 370px;
   }
   .condi_formulaire {
     margin: 0;
