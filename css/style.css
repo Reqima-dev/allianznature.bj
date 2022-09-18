@@ -351,9 +351,7 @@ header {
 .precedent {
   left: 2rem;
 }
-.produitVentes .bannierpay {
-  display: none;
-}
+
 .produitVentes {
   display: flex;
   flex-direction: column;
@@ -362,12 +360,20 @@ header {
   height: 59vh;
   top: 4rem;
 }
-.produitVentes img {
-  width: 338px;
-  height: 437px;
-  object-fit: contain;
-}
 
+.produitVentes img.log {
+  width: 300px;
+}
+.produitVentes .gift_yers {
+  display: flex;
+  align-items: center;
+}
+.produitVentes .gift_yers img {
+  width: 169px;
+}
+.produitVentes .gift_yers img.gift {
+  width: 200px;
+}
 .info-exper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -909,15 +915,19 @@ header {
   margin: 0;
 }
 
+.magazine_home .titres article {
+  width: 450px;
+  text-align: justify;
+  font-size: 17px;
+}
+.magazine_home .titres article a {
+  font-size: 22px;
+}
+
 .magazine_home .titres p {
   text-align: center;
   padding-top: 1rem;
   font-size: 1.2rem;
-}
-.magazine_home .titres span {
-  padding-top: 1rem;
-  font-size: 1.3rem;
-  font-weight: 500;
 }
 
 .magazine_home .titres form {
@@ -2977,11 +2987,6 @@ footer {
     height: 271px;
   }
 
-  .produitVentes img {
-    object-fit: cover;
-    width: 229px;
-    height: 307px;
-  }
   .containerSLider {
     width: 100%;
     margin-bottom: 0;
@@ -2991,7 +2996,8 @@ footer {
   }
 
   .produitVentes {
-    top: 8rem;
+    width: 29vw;
+    height: 51vh;
   }
 
   .produits {
@@ -3163,7 +3169,26 @@ footer {
 
 @media screen and (max-width: 1080px) {
   /*------------- HOME -------------------*/
-
+  .containerSLider {
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    height: 74vh;
+  }
+  .precedent {
+    left: -10rem !important;
+  }
+  .produitVentes {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 17vh;
+    top: 35px;
+  }
+  .slider img {
+    width: 1080px;
+  }
   .container-info h2 {
     font-size: 2em;
   }
@@ -3432,11 +3457,9 @@ footer {
   .row-right h4 {
     font-size: 1.9em;
   }
-  .containerSLider {
-    flex-direction: column;
-  }
+
   .slider img {
-    width: 103vw;
+    width: 940px;
   }
   .suivant,
   .precedent {
@@ -3445,18 +3468,13 @@ footer {
   .precedent {
     left: -9rem;
   }
-  .info-exper {
-    margin-top: 250px;
-  }
 
   .produitVentes {
-    top: 18rem;
     width: 136%;
     height: 166%;
+    top: 10rem;
   }
-  .produitVentes img {
-    display: none;
-  }
+
   .produitVentes .bannierpay {
     display: block;
     position: relative;
@@ -3634,8 +3652,8 @@ footer {
   }
 
   .joindre-footer {
-    display: block;
-    padding: 0;
+    flex-direction: column-reverse;
+    margin: 2rem;
   }
 
   .container-info {
@@ -3876,7 +3894,10 @@ footer {
   .info-exper {
     display: inline-block;
     margin: auto 54px;
-    margin-top: 83px;
+    margin-top: 72px;
+  }
+  .containerSLider {
+    height: 60vh;
   }
   .produit-page .produit_header .text_header {
     left: 10rem;
@@ -3925,7 +3946,15 @@ footer {
     width: 938px;
     height: 156px;
   }
-
+  .slider img {
+    width: 700px;
+    max-height: 400px;
+    object-fit: cover;
+    object-position: 10% 21%;
+  }
+  .slider {
+    height: 0;
+  }
   .produits-img {
     height: 12rem;
   }
@@ -3967,10 +3996,26 @@ footer {
     display: flex;
     flex-direction: column-reverse;
   }
-
-  .besoins-conseils-home-container {
-    margin-bottom: 50px;
+  .suivant,
+  .precedent {
+    top: 20vh;
   }
+  .produitVentes img.log {
+    width: 200px;
+  }
+  .produitVentes .gift_yers img.gift {
+    width: 150px;
+  }
+  .produitVentes .gift_yers img {
+    width: 119px;
+  }
+  .precedent {
+    left: -6rem !important;
+  }
+  .suivant {
+    right: -6rem;
+  }
+
   .form_quizz {
     height: 255vh;
   }
@@ -4245,7 +4290,7 @@ footer {
     padding: 0;
   }
   .produitVentes {
-    top: 8rem;
+    top: 11rem;
   }
   .produit-page .produit_header img {
     width: 587px;
@@ -4259,12 +4304,9 @@ footer {
     top: 24vh;
   }
   .slider img {
-    width: 650px;
-    object-fit: contain;
+    width: 570px;
   }
-  .info-exper {
-    margin-top: 38px;
-  }
+
   .produits a {
     text-align: center;
     display: flex;
@@ -4624,6 +4666,10 @@ footer {
     left: 4.5em;
   }
 
+  .produit-page .produit_header img {
+    width: 338px;
+  }
+
   .produits-info h2 {
     font-size: 3em;
   }
@@ -4636,9 +4682,7 @@ footer {
     top: 10em;
   }
   .produit-page .produit_header .text_header {
-    left: 3rem;
-    flex-direction: column;
-    top: 5rem;
+    display: none;
   }
   .content_product .produtArtisanaux {
     gap: 1rem;
@@ -4668,9 +4712,25 @@ footer {
     width: 12%;
   }
   .slider img {
-    width: 500px;
-    height: 288px;
-    object-fit: cover;
+    width: 464px;
+    height: 250px;
+  }
+  .Adresse-hero {
+    display: none;
+  }
+  .produitVentes img.log {
+    width: 124px;
+  }
+  .produitVentes .gift_yers img.gift {
+    width: 100px;
+  }
+  .produitVentes .gift_yers img {
+    width: 81px;
+  }
+  .icon-resaux {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
   }
   .containerSLider {
     flex-direction: column;
@@ -4689,17 +4749,18 @@ footer {
     width: 358px;
     height: 198px;
   }
-
+  .magazine_home .titres article {
+    width: 333px;
+  }
   .produitVentes {
-    top: 4rem;
+    top: 6rem;
   }
   .suivant,
   .precedent {
-    top: 13vh;
-    font-size: 2rem;
+  display: none;
   }
   .info-exper {
-    margin-top: -107px;
+    margin-top: -35px;
   }
   .besoins-conseils img {
     width: 94vw;

@@ -49,30 +49,7 @@
     <!--Iconics-->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <div class="hero">
-        <div class="Adresse-hero">
-            <ion-icon name="home-outline" class="icon-home"></ion-icon>
-            <p> : <span>03bp 732</span> , Allianznature, Cotonou - Bénin</p>
-        </div>
-        <div class="Adresse-hero horrairee">
-            <ion-icon name="alarm-outline" class="icon-home"></ion-icon>
-            <p> : <span> Du Lundi au Samedi </span> : 09h00-18h00</p>
-        </div>
-        <div class="icon-resaux">
-            <a href="https://www.linkedin.com/company/allianznature" target="_blank">
-                <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-            <a href="https://www.facebook.com/AllianzNature" target="_blank">
-                <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-            <a href="https://www.instagram.com/allianznature" target="_blank">
-                <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-            <a href="https://wa.me/22954333808" target="_blank">
-                <ion-icon name="logo-whatsapp"></ion-icon>
-            </a>
-        </div>
-    </div>
+   
     <header>
         <div class="container-home">
             <a href="index.html" class="logo"> <img src="image/LOGO C.png" alt="Allianz Nature" width="220px"> </a>
@@ -112,7 +89,8 @@
             <a href="#quizz">Je découvre ma peau</a>
         </div>
     </div>
-    <!----
+
+<!---
     <section class="quiz" id="quizz">
 
         <div class="quizz-container" id="quizz">
@@ -126,15 +104,16 @@
                     <ul>
                         <li>
                             <input class="answer" type="radio" name="answer" id="a">
-                            <label for="a" id="optionA">Option A</label>
+                            <label class="labelValue" for="a" id="optionA">Option A</label>
+
                         </li>
                         <li>
                             <input class="answer" type="radio" name="answer" id="b">
-                            <label for="b" id="optionB">Option B</label>
+                            <label class="labelValue" for="b" id="optionB">Option B</label>
                         </li>
                         <li>
                             <input class="answer" type="radio" name="answer" id="c">
-                            <label for="c" id="optionC">Option C</label>
+                            <label class="labelValue" for="c" id="optionC">Option C</label>
                         </li>
 
                     </ul>
@@ -145,7 +124,8 @@
         </div>
 
     </section>
----->
+--->
+    
     <section class="form_quizz" id="quizz">
         <form action="https://formspree.io/f/xrgdewkd" method="post">
             <div class="profil_info">
@@ -273,6 +253,8 @@
 
 
     </section>
+
+
     <div class="compoition_savons">
         <img src="image/bannierComposetonpropresavon.png" alt="">
     </div>
@@ -317,10 +299,10 @@
         </div>
 
     </footer>
-    <!--- /*-------- QUIZZ SCRIPT -----------*/
+<!-----
     <script>
 
-
+        /*-------- QUIZZ SCRIPT -----------*/
         const data = [
             {
                 question: "Quel est votre style de vie ?",
@@ -328,13 +310,15 @@
                 b: "Boulot - Manger - Sport",
                 c: "Vaccances - Manger - Dodo",
                 myImageId: `<img id="myImageId" src="image/femme3.jpg">`,
+                correct: ""
             },
             {
                 question: "Votre alimentation est composée de quoi ?",
                 a: "Protéïnes - Céréales",
                 b: "Céréales - Fruits",
                 c: "Légumes  - Tubercules",
-                myImageId: `<img id="myImageId" src="image/femme2.jpg">`
+                myImageId: `<img id="myImageId" src="image/femme2.jpg">`,
+                correct: ""
 
             },
             {
@@ -342,70 +326,80 @@
                 a: "1 fois par semaine",
                 b: "Tous les jours",
                 c: "Jamais",
-                myImageId: `<img id="myImageId" src="image/femme4.jpg">`
+                myImageId: `<img id="myImageId" src="image/femme4.jpg">`,
+                correct: ""
             },
             {
                 question: "Quelle quantité d'eau buvez vous par jour ?",
                 a: "Moins d'1L",
                 b: "1,5L",
                 c: "3L",
-                myImageId: `<img id="myImageId" src="image/femme5.jpg">`
+                myImageId: `<img id="myImageId" src="image/femme5.jpg">`,
+                correct: ""
             },
             {
                 question: "Avez-vous une vie stressante ?",
                 a: "Un peu",
                 b: "Beaucoup",
                 c: "Pas du tout",
-                myImageId: `<img id="myImageId" src="image/femme.jpg">`
+                myImageId: `<img id="myImageId" src="image/femme.jpg">`,
+                correct: ""
             },
             {
                 question: "A quelle fréquence vous vous maquillez ?",
                 a: "Tous les jours",
                 b: "Occasionnelement",
                 c: "Jamais",
-                myImageId: `<img id="myImageId" src="image/femme7.jpg">`
+                myImageId: `<img id="myImageId" src="image/femme7.jpg">`,
+                correct: ""
             },
             {
                 question: "Le quelle est la problématique de votre excès de peau",
                 a: "Excès de sebum - Rides - Tâches pigmentaires",
                 b: "Dartes - Points noirs - Acné",
                 c: "Tiraillement - ezémas psoriaris - Autres inperfections",
-                myImageId: `<img id="myImageId" src="image/femme6.jpg">`
+                myImageId: `<img id="myImageId" src="image/femme6.jpg">`,
+                correct: ""
             },
             {
                 question: "Posez-vous de la crème de joue ?",
                 a: "tous les jours",
                 b: "occasionnellement",
                 c: "Jamais",
-                myImageId: `<img id="myImageId" src="image/femme12.jpg">`
+                myImageId: `<img id="myImageId" src="image/femme12.jpg">`,
+                correct: ""
             },
             {
                 question: "Faites vous des allergies",
                 a: "Oui",
                 b: "Non",
                 c: "Autres",
-                myImageId: `<img id="myImageId" src="image/femme11.jpeg">`
+                myImageId: `<img id="myImageId" src="image/femme11.jpeg">`,
+                correct: ""
             },
             {
                 question: "Quelles sont vos allergies ?",
                 a: "Aloe Vera",
                 b: "Parfum",
                 c: "huiles essembilles",
-                myImageId: `<img id="myImageId" src="image/femme10.jpeg">`
+                myImageId: `<img id="myImageId" src="image/femme10.jpeg">`,
+                correct: ""
             },
             {
                 question: "Quelle est votre âge ?",
                 a: "Moins de 25ans",
                 b: "25 - 35",
                 c: "45 - 55",
-                myImageId: `<img id="myImageId" src="image/femme9.jpeg">`
+                myImageId: `<img id="myImageId" src="image/femme9.jpeg">`,
+                correct: ""
             },
             {
                 question: "Quelle est votre couleur de peau ?",
                 a: "Noire ébène",
                 b: "Bronzée",
                 c: "CLaire / Métissée",
-                myImageId: `<img id="myImageId" src="image/femme8.jpeg">`
+                myImageId: `<img id="myImageId" src="image/femme8.jpeg">`,
+                correct: ""
             },
         ]
 
@@ -418,7 +412,14 @@
         const myImage = document.getElementById("myImageId")
         const submitBtn = document.getElementById("submit")
 
+        const labelName = document.querySelector('label')
+        let recup = "";
+        console.log(labelName);
+        labelName.addEventListener("label", (e) => {
+            console.log(e.target.label);
 
+        })
+        console.log(recup);
 
         let currentQuiz = 0
         let score = 0
@@ -438,8 +439,8 @@
             myImage.innerHTML = currentQuizzData.myImageId
         }
 
-       
-        
+
+
         function deselectAnswers() {
             answerEls.forEach((answerEl) => (
                 answerEl.checked = false
@@ -449,6 +450,7 @@
         function getSelected() {
             let answer
 
+
             answerEls.forEach((answerEl) => {
                 if (answerEl.checked) {
                     answer = answerEl.id
@@ -456,8 +458,9 @@
             })
 
             return answer
+
         }
-        
+
         submitBtn.addEventListener("click", () => {
             const answer = getSelected()
 
@@ -482,7 +485,7 @@
 
 
     </script>
- --->
+---->
     <script src="js/app.js"></script>
 </body>
 
