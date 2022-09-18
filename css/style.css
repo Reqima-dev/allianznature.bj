@@ -454,17 +454,16 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 1300px;
 }
 .gammeProduits .phare_produits .produits_image {
   position: relative;
-  width: 200px;
+  width: 255px;
   height: 200px;
   display: block;
   text-align: center;
 }
 .gammeProduits .phare_produits .produits_image img {
-  max-width: 203px;
+  max-width: 227px;
   max-height: 195px;
   position: relative;
   object-fit: cover;
@@ -488,8 +487,9 @@ header {
 
 .produits {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   gap: 0.9em;
+  justify-content: center;
 }
 
 .produits img {
@@ -1327,9 +1327,10 @@ header {
   position: relative;
 }
 .produit-page .produit_header img {
-  width: 1349px;
-  height: 75vh;
+  width: 1352px;
+  height: 55vh;
   object-fit: cover;
+  object-position: 10% 73%;
 }
 .produit-page .produit_header .text_header {
   position: absolute;
@@ -4703,6 +4704,9 @@ footer {
     padding: 0;
     text-align: center;
   }
+  header .container-home .menu {
+    right: 14%;
+  }
 
   .produitVentes img.bannierpay {
     width: 618px;
@@ -4714,6 +4718,8 @@ footer {
   .slider img {
     width: 464px;
     height: 250px;
+    object-fit: contain;
+    padding: 0 2rem;
   }
   .Adresse-hero {
     display: none;
@@ -4729,8 +4735,12 @@ footer {
   }
   .icon-resaux {
     width: 100%;
+    height: 4vh;
     display: flex;
     justify-content: space-around;
+  }
+  .hero a {
+    font-size: 21px;
   }
   .containerSLider {
     flex-direction: column;
@@ -4753,14 +4763,14 @@ footer {
     width: 333px;
   }
   .produitVentes {
-    top: 6rem;
+    top: 0;
   }
   .suivant,
   .precedent {
-  display: none;
+    display: none;
   }
   .info-exper {
-    margin-top: -35px;
+    margin-top: -165px;
   }
   .besoins-conseils img {
     width: 94vw;
@@ -4868,21 +4878,3 @@ footer {
     margin-top: 0;
   }
 }
-
-/*
-#header-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 200px;
-  background-color: grey;
-  height: 50px;
-}
-#close-bar {
-  position: absolute;
-  bottom: -20px;
-  background: red;
-  color: white;
-}
-
-*/
