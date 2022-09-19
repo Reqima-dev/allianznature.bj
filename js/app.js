@@ -33,7 +33,7 @@ btnScrollToTop.addEventListener("click", function () {
 //Loader
 setTimeout(() => {
     document.querySelector('.preloader').style.display = "none"
-}, 560);
+}, 160);
 
 //NAVBAR RESPONSIVE
 

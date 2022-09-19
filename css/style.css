@@ -855,7 +855,7 @@ header {
   gap: 1rem;
 }
 .plus-info .about_image {
-  width: 314rem;
+  width: 109rem;
   height: 31rem;
   background-image: url(../image/background_histoire.jpg);
   background-size: cover;
@@ -1360,6 +1360,9 @@ header {
 .nos_produits {
   margin: 2rem 4rem;
 }
+.content_product {
+  height: 100%;
+}
 .nos_produits > h1 {
   text-align: center;
   font-family: var(--font-glacialRegular);
@@ -1376,13 +1379,13 @@ header {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2rem;
   width: 100%;
-  padding: 0 2rem;
+  padding: 0;
 }
 .produtArtisanaux .product_artisa {
   width: 270px;
-  height: 373px;
+  height: 424px;
   background: #fff;
   display: flex;
   align-items: center;
@@ -1393,7 +1396,35 @@ header {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
+#port_savon {
+  height: 100% ;
+}
+#product_masque{
+  height: 100% ;
+}
+#product_Crême{
+  height: 100% ;
+}
+.gamme_ProduitsPage{
+  height: 100% ;
+}
+.produtArtisanaux .product_lait {
+  height: 460px;
+}
 
+.produtArtisanaux .product_lait .details_product {
+  height: 317px;
+}
+#product_laits {
+  height: 100% ;
+}
+.produtArtisanaux .product_lait img {
+  max-width: 250px;
+  text-align: center;
+  transition: all 400ms ease;
+  object-fit: cover;
+  height: 290px;
+}
 .produtArtisanaux .product_artisa:hover img {
   opacity: 0.7;
 }
@@ -1438,7 +1469,7 @@ header {
   text-align: justify;
   color: #fff;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 14px;
 }
 .produtArtisanaux .product_artisa a {
   margin-top: 6px;
@@ -1992,7 +2023,7 @@ header {
 }
 
 .besoins-conseils-home {
-  height: 100vh;
+  height: 77vh;
 }
 
 .besoins-conseils {
@@ -2874,6 +2905,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   padding: 1rem 4rem;
 }
 .compoition_savons img {
@@ -2887,6 +2919,9 @@ footer {
   */
 
 @media screen and (max-width: 1244px) {
+  body{
+    overflow-x: hidden;
+  }
   /*Nav*/
 
   header .container-home .menu {
@@ -3169,6 +3204,9 @@ footer {
 }
 
 @media screen and (max-width: 1080px) {
+  body{
+    overflow-x: hidden;
+  }
   /*------------- HOME -------------------*/
   .containerSLider {
     flex-direction: column;
@@ -3377,6 +3415,9 @@ footer {
 }
 
 @media screen and (max-width: 940px) {
+  body{
+    overflow-x: hidden;
+  }
   /*=========== HOME ============*/
   .info-apropos p {
     font-size: 17px;
@@ -3638,6 +3679,9 @@ footer {
 }
 
 @media screen and (max-width: 894px) {
+  body{
+    overflow-x: hidden;
+  }
   /* ============= HOME ==========*/
 
   .horrairee {
@@ -3892,6 +3936,9 @@ footer {
 }
 
 @media screen and (max-width: 700px) {
+  body{
+    overflow-x: hidden;
+  }
   .info-exper {
     display: inline-block;
     margin: auto 54px;
@@ -3935,8 +3982,8 @@ footer {
     width: 164%;
   }
   .produit-page .produit_header img {
-    width: 747px;
-    height: 37vh;
+    width: 618px;
+    height: 24vh;
   }
   .produits {
     display: grid;
@@ -4249,6 +4296,9 @@ footer {
 }
 
 @media screen and (max-width: 570px) {
+  body{
+    overflow-x: hidden;
+  }
   .produits-section {
     padding-top: 2em;
   }
@@ -4663,12 +4713,15 @@ footer {
 }
 
 @media screen and (max-width: 464px) {
+  body{
+    overflow-x: hidden;
+  }
   .produits-info {
     left: 4.5em;
   }
 
   .produit-page .produit_header img {
-    width: 338px;
+    width: 462px;
   }
 
   .produits-info h2 {
